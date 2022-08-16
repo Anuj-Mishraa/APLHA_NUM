@@ -15,7 +15,7 @@ r.geometry('500x600')
 
 
 def remove():
-    files = os.listdir(r"D:\project_exhibition_2")
+    files = os.listdir("ALPHA_NUM")
     for f in files:
         if not os.path.isdir(f) and ".mp3" in f:
             os.remove(f)

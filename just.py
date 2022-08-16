@@ -22,7 +22,7 @@ def add():
     mixer.music.play()
     
 def remove():
-    files = os.listdir(r"D:\project_exhibition_2")
+    files = os.listdir(r"C:\Users\91883\OneDrive\Documents\GitHub\APLHA_NUM")
     for f in files:
         if not os.path.isdir(f) and ".mp3" in f:
             os.remove(f)
