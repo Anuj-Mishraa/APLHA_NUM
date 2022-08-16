@@ -1,0 +1,5 @@
+gtts==2.2.4
+keras==2.9.0
+numpy==1.23.2
+opencv_python==4.6.0.66
+pygame==2.1.2
