@@ -38,7 +38,7 @@ def display1():
     blue = (0, 0, 128)
 
     IMAGESAVE = False
-    model = load_model('model_hand.h5')
+    model = load_model(r'APLHA_NUM\model_hand.h5')
 # Dictionary for getting characters from index values...
     word_dict = {0:'A',1:'B',2:'C',3:'D',4:'E',5:'F',6:'G',7:'H',8:'I',9:'J',10:'K',11:'L',12:'M',13:'N',14:'O',15:'P',16:'Q',17:'R',18:'S',19:'T',20:'U',21:'V',22:'W',23:'X', 24:'Y',25:'Z'}
 
@@ -59,10 +59,12 @@ def display1():
     num_x_cord = []
     num_y_cord = []
 
-    text = FONT1.render('*      PROJECT EXHIBITION 2    *', True, green, blue)
-    text1 = FONT1.render('* Project has successfully run  *', True, green, blue)
-    text2 = FONT1.render('* * * * * * * * * * * * * * * * * * * * * * * *', True, green, blue)
- 
+    text = FONT1.render('*  ALPHANUM RECOGNIZATION *', True, green, blue)
+    text1 = FONT1.render('*   PROJECT BY ANUJ MISHRA   *', True, green, blue)
+    text2a = FONT1.render('*                                                      *', True, green, blue)
+    text2 = FONT1.render('* * * * * * * * * * * * * * * * * * * * * * * * *', True, green, blue)
+    text3 = FONT1.render('*       Press "a" to play     *', True, WHITE, RED)
+    text4 = FONT1.render('*       Press "space" for space    *', True, WHITE, RED)
 # create a rectangular object for the
 # text surface object
  
@@ -70,9 +72,11 @@ def display1():
     while True:
         DISPLAYSURF.blit(text2, (500,10))
         DISPLAYSURF.blit(text, (500,30))
-        DISPLAYSURF.blit(text1, (500,50))
-        DISPLAYSURF.blit(text2, (500,75))
-
+        DISPLAYSURF.blit(text2a, (500,50))
+        DISPLAYSURF.blit(text1, (500,70))
+        DISPLAYSURF.blit(text2, (500,90))
+        DISPLAYSURF.blit(text3, (500,115))
+        DISPLAYSURF.blit(text4, (500,145))
         DISPLAYSURF.blit(image, (0, 0))
         for event in pygame.event.get():
             if event.type == QUIT:
@@ -130,7 +134,7 @@ def display1():
                 if event.type == KEYDOWN:
                     if event.unicode == "n":
                         DISPLAYSURF.fill(BLACK)
-            pygame.display.update()
+        pygame.display.update()
     
 def display():
 
