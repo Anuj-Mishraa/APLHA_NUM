@@ -19,3 +19,6 @@ and other packages by using
 <h3>
 Output
 </h3>
+<p>
+  <img src="https://github.com/Anuj-gr8/APLHA_NUM/blob/main/alpha_num_output.jpg" alt="my image" width="400" height="400">
+ </p>
